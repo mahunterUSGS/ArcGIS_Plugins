@@ -1,0 +1,13 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>Nomenclature Shape to WKT 360</Name><AddInID>{30d1f7c3-a04d-4a11-8d51-9619e5f9ecda}</AddInID><Description>Select a feature to return it's geometry in a WKT string</Description><Version>0.1</Version><Image>Images\WKT_1.PNG</Image><Author>Marc Hunter</Author><Company>USGS Astrogeology</Company><Date>03/08/2019</Date><Targets><Target name="Desktop" version="10.1" /></Targets><AddIn language="PYTHON" library="NomenclatureWKT_addin.py" namespace="NomenclatureWKT_addin"><ArcMap>
+    <Commands>
+        <Button caption="WKT" category="Nomenclature Shape to WKT 360" class="wKT" id="NomenclatureWKT_addin.button" image="Images\WKT.PNG" message="" tip="Click on a feature to bring up it's WKT geometry"><Help heading="" /></Button>
+        <Button caption="WKT360" category="Nomenclature Shape to WKT 360" class="WKT360" id="NomenclatureWKT360_addin.button" image="Images\WKT_2.PNG" message="" tip="Return WKT with 0-360 longitude"><Help heading="" /></Button>
+        </Commands>
+    <Extensions>
+        </Extensions>
+    <Toolbars>
+        <Toolbar caption="Nomeclature" category="Nomenclature Shape to WKT 360" id="NomenclatureWKT_addin.toolbar" showInitially="true"><Items><Button refID="NomenclatureWKT_addin.button" /><Button refID="NomenclatureWKT360_addin.button" /></Items></Toolbar>
+        </Toolbars>
+    <Menus>
+        </Menus>
+    </ArcMap></AddIn></ESRI.Configuration>
